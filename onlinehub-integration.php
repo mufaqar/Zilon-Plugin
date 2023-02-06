@@ -1629,7 +1629,6 @@ if($option['moi_menu_icon']==1)
 			$url=	home_url('/create-membership'); 
 		}
 		$homelink = '<li class="createmembership"><a href="' .$url . '">' . __('Create a MemberShip') . '</a></li>';
-		// add the home link to the end of the menu
 		$items = $items . $homelink;
 		return $items;
 	}
