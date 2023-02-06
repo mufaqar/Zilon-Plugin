@@ -1540,8 +1540,6 @@ function moi_update_options_data( $configurations) {
 		moi_reg_locations();
 		moi_reg_locationUser();
 	}
-
-
 	
 }
 
@@ -1586,8 +1584,7 @@ if ( ! wp_next_scheduled( 'zoi_cron_three_minutes' ) ) {
 
 // Hook into that action that'll fire every three minutes
 add_action( 'zoi_cron_three_minutes', __NAMESPACE__ . '\\every_three_minutes_event_func' );
-function every_three_minutes_event_func() {
-	
+function every_three_minutes_event_func() {	
 	//moi_get_vendors();
 	//moi_get_category();
 	//moi_get_department();
@@ -1602,8 +1599,6 @@ function every_three_minutes_event_func() {
 		);
 		$post_id = wp_insert_post( $post , $wp_error );			
 		moi_update_products($post_id);
-
-
 	
 }
 
