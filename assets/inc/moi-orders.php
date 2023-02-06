@@ -22,10 +22,6 @@ function my_custom_query_vars( $vars ) {
 }
 
 add_filter( 'query_vars', 'my_custom_query_vars', 0 );
-
-
-
-
 /**
  * Flush rewrite rules on plugin activation.
  */
@@ -33,17 +29,8 @@ function my_custom_flush_rewrite_rules() {
 	add_rewrite_endpoint( 'my-custom-endpoint', EP_ROOT | EP_PAGES );
 	flush_rewrite_rules();
 }
-
 register_activation_hook( __FILE__, 'my_custom_flush_rewrite_rules' );
 register_deactivation_hook( __FILE__, 'my_custom_flush_rewrite_rules' );
-
-
-
-
-
-
-
-
 
 /*
 *
@@ -65,33 +52,8 @@ if ( ! defined( 'WPINC' ) ) {die;} // end if
  *
  * @return string
  */
-
-
-
-
-
-
-
-
-
-
- 
-
-
 ?>
-
-
-
-
-
-
-
-
 <img class="moi-logo" src="<?= MOI_CORE_IMG ?>logo.png"> <br/><br/><br/>
-
-
-
-
 <div class="container">
       <div class="row">
         <table id="example"  class="table table-striped table-bordered" cellspacing="0"  width="100%" >
@@ -108,34 +70,19 @@ if ( ! defined( 'WPINC' ) ) {die;} // end if
               <th class="th-sm">Action</th>
             </tr>
           </thead>
-          <tbody>
-
-        
+          <tbody>        
           <?php
-
           $user_id = get_current_user_id();
-
           // Get the WP_User instance Object
           $user = new WP_User( $user_id );
-
-     
-
           $username     = $user->username; // Get username
           $user_email   = $user->email; // Get account email
           $first_name   = $user->first_name;
           $last_name    = $user->last_name;
           $display_name = $user->display_name;
-
-          // Customer billing information details (from account)
-          $billing_first_name = $user->billing_first_name;
-          
-          $billing_phone    = $user->billing_phone;
-
-       // data-toggle='modal' data-target='#exampleModalCenter'
-
-          
+          $billing_first_name = $user->billing_first_name;          
+          $billing_phone    = $user->billing_phone;          
           $response = moi_do_curl('/order-svc/api/Invoice/GetInvoiceByCustId/'.$billing_phone.'?pageNo=0&pageSize=999','GET' );
-
           $homeulr =  home_url();
 
           
