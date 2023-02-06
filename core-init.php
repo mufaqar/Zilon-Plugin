@@ -43,7 +43,6 @@ add_action( 'wp_enqueue_scripts', 'moi_enqueued_assets' );
 if ( file_exists( MOI_CORE_INC . 'moi-helper.php' ) ) {
 	require_once MOI_CORE_INC . 'moi-helper.php';
 }
-
 // Load the Functions
 if ( file_exists( MOI_CORE_INC . 'moi-core-functions.php' ) ) {
 	require_once MOI_CORE_INC . 'moi-core-functions.php';
@@ -52,7 +51,3 @@ if ( file_exists( MOI_CORE_INC . 'moi-core-functions.php' ) ) {
 if ( file_exists( MOI_CORE_INC . 'moi-ajax-request.php' ) ) {
 	require_once MOI_CORE_INC . 'moi-ajax-request.php';
 } 
-
-
-
-
