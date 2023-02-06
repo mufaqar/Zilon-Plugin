@@ -1622,11 +1622,9 @@ if($option['moi_menu_icon']==1)
 {
 	function new_nav_menu_items($items) {
 		$url='';
-		$url=home_url(); 
-	
+		$url=home_url(); 	
 		if (strpos($url,'ondelivery') !== false) {
-			$url=	home_url('/index.php/create-membership'); 
-	
+			$url=	home_url('/index.php/create-membership'); 	
 		} else {
 			$url=	home_url('/create-membership'); 
 		}
