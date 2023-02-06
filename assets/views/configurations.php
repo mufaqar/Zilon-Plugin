@@ -12,28 +12,27 @@
    
 
         <div class="moi-config-block">
-
         <?php
 
     
 
         
-	$store_loc = get_option('store_location');
+            $store_loc = get_option('store_location');
 
-    $last_import = "2022-03-01 10:25:49";
+            $last_import = "2022-03-01 10:25:49";
 
-  
+        
 
 
-   $url = '/inventory-svc/api/InventoryItem/GetInventoryItems?warehouseId='.$store_loc.'&pageNo=0&pageSize=2000&checkUpdate=true&lastSyncDateTime='.$last_import.'';
-   $url = str_replace(" ","T",$url); 
-	$response = moi_do_curl($url,'GET' );
-    
-   
-   
-    print "<pre>";
-    print_r($response);
-    print "</pre>";
+        $url = '/inventory-svc/api/InventoryItem/GetInventoryItems?warehouseId='.$store_loc.'&pageNo=0&pageSize=2000&checkUpdate=true&lastSyncDateTime='.$last_import.'';
+        $url = str_replace(" ","T",$url); 
+            $response = moi_do_curl($url,'GET' );
+            
+        
+        
+            print "<pre>";
+            print_r($response);
+            print "</pre>";
 
   
 
