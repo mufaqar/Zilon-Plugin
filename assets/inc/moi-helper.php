@@ -23,13 +23,6 @@ if ( ! defined( 'WPINC' ) ) {die;} // end if
  */
 
 
-
-
-
-
-
-
-
 function moi_do_curl($end_point,$method, $post_fields=array())
 {
   $token = get_option('moi_token');
@@ -65,7 +58,6 @@ function moi_do_curl($end_point,$method, $post_fields=array())
 
  return json_decode($response);  
 }
-
 
 
 function moi_get_token()
