@@ -134,7 +134,7 @@
         <div class="moi-right-block">
             <div class="moi-center">
                 <h2 class=""><?php echo __( 'Product Registration', 'membersone-integration' ); ?></h2>               
-            </div>        
+            </div>       
 
                 <div class=" message notice-success is-dismissible notice ">
                            <p><div id="msg"></div></p>
@@ -221,8 +221,7 @@
                       //   $("#overlay").fadeIn(300);　
             });
 
-            $('#get_products').click(function () {
-         
+            $('#get_products').click(function () {         
             jQuery.ajax({
                 type: "get",
                 url: moi_core_ajax.ajax_url + "?action=get_products",
@@ -230,8 +229,7 @@
                 beforeSend: function() {
                    $("#overlay").fadeIn(300);
                 },
-                success: function(data){  
-                 
+                success: function(data){                   
                     $('.message').fadeIn('slow');                      
                     $('#msg').html(data.record).fadeIn('slow');                     
                     $('.message').delay(5000).fadeOut('slow');                 
