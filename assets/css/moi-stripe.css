@@ -157,13 +157,11 @@
   flex-wrap: wrap;
   margin: -10px;
 }
-
 .common-ButtonGroup .common-Button {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin: 10px;
 }
-
 /** Page-specific styles */
 @-webkit-keyframes spin {
   0% {
@@ -192,7 +190,6 @@
     opacity: 1;
   }
 }
-
 @keyframes void-animation-out {
   0%,
   to {
