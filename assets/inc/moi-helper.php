@@ -70,9 +70,6 @@ function moi_get_token()
   ];
  
   $response = moi_do_curl('/auth-svc/api/SignIn', 'POST', $post_fields );
-
-  
-
  
   if($response->success==true)
   {
@@ -80,11 +77,9 @@ function moi_get_token()
 
     return $token;   
   }
-
   
   return '';    
 }
-
 
 refresh_token();
 
