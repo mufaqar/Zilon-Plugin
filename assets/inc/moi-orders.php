@@ -1,10 +1,4 @@
 <?php
-
-
-
-
-
-
 /**
  * Register new endpoint to use inside My Account page.
  *
@@ -13,7 +7,6 @@
 function my_custom_endpoints() {
 	add_rewrite_endpoint( 'my-custom-endpoint', EP_ROOT | EP_PAGES );
 }
-
 add_action( 'init', 'my_custom_endpoints' );
 
 /**
