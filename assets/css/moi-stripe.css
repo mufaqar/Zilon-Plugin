@@ -270,7 +270,6 @@ main > .container-lg {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
-
 }
 main > .container-lg .cell {
   display: -ms-flexbox;
@@ -338,13 +337,11 @@ main > .container-lg .example {
   margin-left: -10px;
   margin-right: -10px;
 }
-
 @media (min-width: 670px) {
   main > .container-lg .example {
     padding: 20px;
   }
 }
-
 .example_new.submitted form,
 .example_new.submitting form {
   opacity: 0;
@@ -357,7 +354,6 @@ main > .container-lg .example {
 .example_new.submitting .success {
   pointer-events: all;
 }
-
 .example_new.submitting .success .icon {
   opacity: 1;
 }
