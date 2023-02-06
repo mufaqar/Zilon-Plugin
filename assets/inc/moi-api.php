@@ -1,16 +1,9 @@
 <?php
-
-
 function ProductUpdated( ) {
-
   $store_loc = get_option('store_location');
-
   $url = "/inventory-svc/api/InventoryItem/GetInventoryItems?warehouseId=$store_loc&pageNo=0&pageSize=20&sellOnline=True";	
 	$response = moi_do_curl($url,'GET');
   //print_r($response);
-
-
-
   
   function getImage($url) {
     include_once( ABSPATH . 'wp-admin/includes/image.php' );
@@ -61,9 +54,6 @@ function get_termId($catId , $termName) {
           {  $termId = $term->term_id;  }
       return $termId;
 }
-
-
-
 //	$apiproducts = $response->data;
 
   if($response->success==true)	{	
@@ -337,12 +327,9 @@ function update_products_stock(){
 				$check_title = get_page_by_title($itemName, 'OBJECT', 'product');
 				$u_product_id = $check_title->ID;					 			
 				update_post_meta( $u_product_id, 'quantity', $quantity ); 				
-				update_post_meta( $u_product_id, '_stock', $quantity);		
-			
-			}
-				
+				update_post_meta( $u_product_id, '_stock', $quantity);				
+			}				
 		}	
-
     return "Stock Update";	
 	}	
 	 
@@ -368,5 +355,4 @@ function moi_reg_hook () {
 		"Trigger"=> "StockUpdated"
 	  ];
 	$response = moi_do_curl($url, 'POST', $post_fields );
-
 }
