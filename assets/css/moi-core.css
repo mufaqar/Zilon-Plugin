@@ -1,0 +1,354 @@
+/*--------------------------- 
+Add Plugin CSS here
+---------------------------*/
+/*---------------------------
+CSS Filters
+---------------------------*/
+
+.blur {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.brightness {
+  -webkit-filter: brightness(0.3);
+  filter: brightness(0.3);
+}
+
+.contrast {
+  -webkit-filter: contrast(180%);
+  filter: contrast(180%);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.huerotate {
+  -webkit-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
+}
+
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.opacity {
+  -webkit-filter: opacity(50%);
+  filter: opacity(50%);
+}
+
+.saturate {
+  -webkit-filter: saturate(7);
+  filter: saturate(7);
+}
+
+.sepia {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+
+.shadow {
+  -webkit-filter: drop-shadow(8px 8px 10px green);
+  filter: drop-shadow(8px 8px 10px green);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.moi-configurations {
+  margin: 20px;
+}
+.moi-row {
+  display: block;
+  width: 100%;
+}
+
+.moi-config-block {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.moi-right-block {
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+
+.moi-center {
+  text-align: center;
+}
+
+.moi-center h2 {
+  background: #dcdcdc;
+  padding: 17px 0;
+  margin: 0;
+}
+
+.moi-logo {
+  width: 200px;
+  height: auto;
+}
+
+.moi-configurations input[type='text'],
+.moi-configurations input[type='password'],
+.moi-configurations select,
+.moi-configurations textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  resize: vertical;
+  max-width: none;
+}
+
+.moi-configurations label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: bold;
+  cursor: default !important;
+}
+
+.moi-configurations input[type='submit'] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 17px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.moi-configurations input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.moi-configurations .container {
+  border-radius: 5px;
+  background-color: #e8e8e8;
+  padding: 20px;
+}
+
+.moi-configurations .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.moi-configurations .col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+.moi-configurations .col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.moi-configurations .col-40 {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+}
+
+.moi-configurations .col-60 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.moi-configurations .row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.moi-configurations .notice.is-dismissible {
+  width: 75%;
+  float: right;
+  margin-bottom: 25px;
+}
+
+.moi-configurations .notice-error {
+  color: red;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .moi-configurations .col-25,
+  .moi-configurations .col-75,
+  .moi-configurations input[type='submit'] {
+    width: 100%;
+  }
+
+  .moi-configurations .col-25 {
+    text-align: left;
+  }
+
+  .moi-configurations label {
+    padding: 12px 12px 0px 4px;
+  }
+
+  .moi-configurations .notice.is-dismissible {
+    width: 100%;
+    float: right;
+    margin-bottom: 25px;
+  }
+
+  .moi-configurations .notice,
+  div.error,
+  div.updated {
+    margin: 0;
+  }
+}
+.moi-alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+.moi-alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.moi-alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.moi-d-none {
+  display: none;
+}
+.moi-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.moi-tags span {
+  background: #2271b1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 1px solid #04aa6d;
+  transition: 0.6s all;
+  cursor: pointer;
+}
+.moi-tags a {
+  padding-right: 7px;
+  padding-bottom: 7px;
+}
+.moi-tags span:hover {
+  background: none;
+  color: #04aa6d;
+}
+
+.itemTags h6 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.itemTags {
+  margin-bottom: 30px;
+}
+.moi-heading {
+  align-items: flex-start;
+  text-align: left;
+  text-decoration: underline;
+  margin-top: 6%;
+}
+.moi-nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.moi-nav li {
+  display: inline-block;
+  font-size: 18px;
+  padding: 17px;
+  border-radius: 12px;
+  border: 2px solid #b1adad;
+  background-color: #cdc8c82e;
+}
+input[type='radio'] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}
+
+.moi-form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+.cv-spinner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner1 {
+  width: 40px;
+  height: 40px;
+  border: 4px #ddd solid;
+  border-top: 4px red solid;
+  border-radius: 50%;
+  animation: sp-anime 0.8s infinite linear;
+}
+@keyframes sp-anime {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.is-hide {
+  display: none;
+}

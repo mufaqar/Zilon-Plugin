@@ -1,0 +1,256 @@
+
+
+.moi-modal 
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.moi-modal-content 
+{
+  position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+   border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    outline: 0;
+}
+
+/* The Close Button */
+.moi-close 
+{
+    float: right;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    margin-top: -8px;
+    margin-right: 4px;
+}
+
+.moi-close:hover,
+.moi-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.moi-modal-lg {
+    width: 900px;
+    margin: 30px auto;
+    position: relative;
+}
+.moi-modal-header {
+    padding: 15px;
+   background: #ecf1f5;
+
+}
+.moi-modal-body 
+{
+    background: #ecf1f5;
+    position: relative;
+    padding: 100px;
+    text-align: center;
+}
+
+ 
+.moi-btn-primary {
+    color: #fff;
+    background-color: rgb(161 141 93);;
+    border-color: rgb(161 141 93);;
+}
+.moi-btn 
+{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 10px 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.moi-btn-primary:not(:disabled):not(.disabled).active, .moi-btn-primary:not(:disabled):not(.disabled):active, .show>.moi-btn-primary.dropdown-toggle 
+{
+    color: #fff;
+    background-color: rgb(161 141 93);;
+    border-color: rgb(161 141 93);;
+}
+
+.moi-btn-primary:hover {
+    color: #fff;
+    background-color: rgb(161 141 93);;
+    border-color: rgb(161 141 93);;
+}
+.moi-text-center
+{
+ text-align:center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.moi-col-25
+{
+  width: 25%;
+  margin-right: 15px;
+}
+.moi-row {
+    display: inline-flex; 
+}
+.moi-25
+{
+  width:25%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropbtn {
+  background-color: rgb(161 141 93);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.stripe-input{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.stripe-label
+{
+    float: left;
+    text-align:left;
+    font-weight: 600 !important;
+    font-size: 12pt !important;
+    font-family: 'Open Sans', sans-serif  !important;
+}
+.checkout-btn{
+    background-color: rgb(161 141 93);
+    color: #fff;
+    font-size:1rem;
+    margin: 0 !important;
+    width:100%;
+    font-weight:600;
+    position: relative;
+    z-index: 5;
+}
+.checkout-btn:hover{
+    color: #fff !important;
+}
+.checkout-btn:before{
+    content: "";
+    position: absolute;
+    background-color:rgb(161 141 93);
+    height: 100%;
+    width: 0%;
+    top: 0;
+    right:0;
+    left: unset;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+}
+.checkout-btn:hover:before{
+    width:100%;
+    left:0;
+    right:unset;
+}
+.moi-margin-0
+{
+  margin:0px !important;
+}
+.mb-15
+{
+  margin-bottom:15px !important;
+}
+.mt-40
+{
+  margin-top:40px !important;
+}
+.text-danger
+{
+    color: red;
+    font-weight: 600;
+}
+.moi_add_to_cart
+{
+  background-color: black;
+}
+.moi-configurations .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
