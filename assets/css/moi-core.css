@@ -294,7 +294,6 @@ input[type='radio'] {
   -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
   transform: scale(1.5);
 }
-
 .moi-form-control {
   display: block;
   width: 100%;
