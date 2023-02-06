@@ -1611,8 +1611,6 @@ function moi_update_products ($lastId) {
 	update_products_stock($last_import);
 }
 
-
-
 add_action('wp_head', __NAMESPACE__ . '\\cvf_ps_enqueue_datepicker');
 function cvf_ps_enqueue_datepicker() {
     wp_enqueue_script('jquery-ui-datepicker');
