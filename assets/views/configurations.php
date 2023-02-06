@@ -123,10 +123,8 @@
                             </div>
                             <div class="col-75">
                                 <input type="submit" value="<?php echo __( 'Save Configurations', 'membersone-integration' ); ?>">
-
                             </div>
-                        </div>
-                        
+                        </div>                        
                     </form>
                 </div>
             </div>
@@ -136,8 +134,7 @@
         <div class="moi-right-block">
             <div class="moi-center">
                 <h2 class=""><?php echo __( 'Product Registration', 'membersone-integration' ); ?></h2>               
-            </div>
-           
+            </div>        
 
                 <div class=" message notice-success is-dismissible notice ">
                            <p><div id="msg"></div></p>
