@@ -83,10 +83,8 @@ if ( ! defined( 'WPINC' ) ) {die;} // end if
           $billing_first_name = $user->billing_first_name;          
           $billing_phone    = $user->billing_phone;          
           $response = moi_do_curl('/order-svc/api/Invoice/GetInvoiceByCustId/'.$billing_phone.'?pageNo=0&pageSize=999','GET' );
-          $homeulr =  home_url();
-
-          
-          if($response->success==true)	{          
+          $homeulr =  home_url();          
+          if($response->success==true)	{         
 
             foreach($response->data as $orderdata) {	
              echo "<tr>";
