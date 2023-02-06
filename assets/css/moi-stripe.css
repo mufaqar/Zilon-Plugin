@@ -129,7 +129,6 @@
   color: #fff;
   background: #32325d;
 }
-
 .common-Button--dark:hover {
   color: #fff;
   background-color: #43458b;
@@ -145,13 +144,11 @@
   background: #aab7c4;
   pointer-events: none;
 }
-
 .common-ButtonIcon {
   display: inline;
   margin: 0 5px 0 0;
   position: relative;
 }
-
 .common-ButtonGroup {
   display: -ms-flexbox;
   display: -webkit-box;
