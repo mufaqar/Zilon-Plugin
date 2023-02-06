@@ -1,15 +1,15 @@
 
 <div class="moi-configurations" >
-    <div class="moi-center">
-        <img class="moi-logo" src="<?= MOI_CORE_IMG ?>logo.png"> <br/><br/><br/>
-    </div>
-    <div class="moi-row">
-    <div id="overlay">
-        <div class="cv-spinner">
-            <span class="spinner1"></span>
+        <div class="moi-center">
+            <img class="moi-logo" src="<?= MOI_CORE_IMG ?>logo.png"> <br/><br/><br/>
         </div>
-    </div>
-   
+        <div class="moi-row">
+        <div id="overlay">
+            <div class="cv-spinner">
+                <span class="spinner1"></span>
+            </div>
+        </div>
+    
 
         <div class="moi-config-block">
         <?php
@@ -21,8 +21,7 @@
             $response = moi_do_curl($url,'GET');
             print "<pre>";
             print_r($response);
-            print "</pre>";
-   
+            print "</pre>";  
 
         ?>
 
