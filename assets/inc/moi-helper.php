@@ -69,12 +69,10 @@ function moi_get_token()
     "Password" => $moi_password
   ];
  
-  $response = moi_do_curl('/auth-svc/api/SignIn', 'POST', $post_fields );
- 
+  $response = moi_do_curl('/auth-svc/api/SignIn', 'POST', $post_fields ); 
   if($response->success==true)
   {
     $token=$response->data->access_token;
-
     return $token;   
   }
   
@@ -82,7 +80,6 @@ function moi_get_token()
 }
 
 refresh_token();
-
 function refresh_token()
 {
   $response = moi_do_curl('/inventory-svc/api/Department','GET');  
