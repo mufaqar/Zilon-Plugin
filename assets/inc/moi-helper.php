@@ -85,18 +85,9 @@ refresh_token();
 
 function refresh_token()
 {
-
-
-  $response = moi_do_curl('/inventory-svc/api/Department','GET');
-
- 
-  
+  $response = moi_do_curl('/inventory-svc/api/Department','GET');  
 if($response->statusCode == 401) {
-
   moi_get_token();
-
-
-
 }  
 
 
