@@ -316,20 +316,16 @@ main > .container-lg .cell.intro > * {
   width: 100%;
   max-width: 700px;
 }
-
 main > .container-lg .cell.intro .common-IntroText {
   margin-top: 10px;
 }
-
 main > .container-lg .cell.intro .common-BodyText {
   margin-top: 15px;
 }
-
 main > .container-lg .cell.intro .common-ButtonGroup {
   width: auto;
   margin-top: 20px;
 }
-
 main > .container-lg .example {
   -ms-flex-align: center;
   -webkit-box-align: center;
