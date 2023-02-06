@@ -352,12 +352,8 @@ function update_products_stock(){
 				
 		}	
 
-    return "Stock Update";
-	
-	}
-
-
-		
+    return "Stock Update";	
+	}	
 	 
 }
 
