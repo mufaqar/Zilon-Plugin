@@ -66,12 +66,7 @@ function get_termId($catId , $termName) {
 
 //	$apiproducts = $response->data;
 
-
- 
-
-  if($response->success==true)	{
-
-	
+  if($response->success==true)	{	
 		foreach($response->data as $apiproduct) {	
 
 			$itemName = $apiproduct->itemName;
@@ -324,11 +319,7 @@ function get_termId($catId , $termName) {
 			
 			}		
 		}
-
 	}
-	
-
-
 }
 
 function update_products_stock(){ 
@@ -357,8 +348,6 @@ function update_products_stock(){
 	 
 }
 
-
-
 add_action( 'rest_api_init', function () {
   register_rest_route( 'zilon/v2', '/StockUpdated', array(
     'methods' => 'GET',
@@ -370,7 +359,6 @@ add_action( 'rest_api_init', function () {
   ) );
 } );
 
-
 function moi_reg_hook () {
 	$url = "https://dev-connect.azure-api.net/inventory-svc/api/SaveHookRegister";
 	$post_fields= [		
@@ -379,7 +367,6 @@ function moi_reg_hook () {
 		"RegisterId"=> "",
 		"Trigger"=> "StockUpdated"
 	  ];
-	 
-	  $response = moi_do_curl($url, 'POST', $post_fields );
+	$response = moi_do_curl($url, 'POST', $post_fields );
 
 }
