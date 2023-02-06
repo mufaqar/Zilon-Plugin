@@ -1609,7 +1609,6 @@ function moi_update_products ($lastId) {
 	$last_import = $post_object->post_date;
 	updated_inventory_items($last_import);
 	update_products_stock($last_import);
-
 }
 
 
