@@ -312,14 +312,11 @@ function get_termId($catId , $termName) {
 	}
 }
 
-function update_products_stock(){ 
-	
+function update_products_stock(){ 	
 	$store_loc = get_option('store_location');
-
 	$url = "/inventory-svc/api/InventoryItem/GetUpdatedInventoryItems?warehouseId=$store_loc&pageNo=0&pageSize=2000";
 	$url = str_replace(" ","T",$url); 
-	$response = moi_do_curl($url,'GET');
-	
+	$response = moi_do_curl($url,'GET');	
 	if($response->success==true){			
 		foreach($response->data as $apiproduct) {				
 			$quantity = $apiproduct->quantity;	

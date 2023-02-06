@@ -304,9 +304,7 @@ function althemist_premium_support_content($arg) {
       <?php	$in_id = $_REQUEST['id'];
               $response = moi_do_curl('/order-svc/api/Invoice/GetOrderByInvoiceNo/'.$in_id.'','GET' );
               $data = $response->data; 
-
               $currency = "$";
-
            /* print "<pre>";
               print_r($data);  */
       ?> Order #<?php echo $data->invoiceNumber; ?>
