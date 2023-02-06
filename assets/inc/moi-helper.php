@@ -89,9 +89,4 @@ function refresh_token()
 if($response->statusCode == 401) {
   moi_get_token();
 }  
-
-
-
-
-
 }
