@@ -361,9 +361,7 @@
                     $("#overlay").fadeOut(300);
                 },500);
              });
-        });
-
-       
+        });       
         function getStoreUrl() {
             moi_url = window.location.href;
             moi_url = moi_url.split('admin.php');
