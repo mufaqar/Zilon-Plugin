@@ -389,7 +389,6 @@ main > .container-lg .example * {
   margin: 0;
   padding: 0;
 }
-
 main > .container-lg .example .caption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,7 +406,6 @@ main > .container-lg .example .caption {
   font-size: 15px;
   font-weight: 500;
 }
-
 main > .container-lg .example .caption * {
   font-family: inherit;
   font-size: inherit;
