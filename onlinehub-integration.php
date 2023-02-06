@@ -1501,8 +1501,6 @@ function membersone_integration_init() {
 	if ( file_exists( MOI_CORE_VIEWS . 'configurations.php' ) ) {
 		require_once MOI_CORE_VIEWS . 'configurations.php';
 	}
-
-	
 	
 }
 
@@ -1536,7 +1534,6 @@ function moi_update_options_data( $configurations) {
 	}
 
 	$token = moi_get_token();	
-
 	if(!empty($token))
 	{
 		update_option('moi_token' , $token);
