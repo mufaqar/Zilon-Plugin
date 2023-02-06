@@ -188,27 +188,14 @@ if ( ! defined( 'WPINC' ) ) {die;} // end if
     </div>
   </body>
 
-
-
-
-
-
-
-
-
-
 <?php
   function my_enqueue() {
-
-
-
 wp_localize_script( 'ajax-script', 'my_ajax_object',
         array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 }
 add_action( 'wp_enqueue_scripts', 'my_enqueue' );
 
 ?>
-
 <style>
   .woocommerce-account .woocommerce-MyAccount-content p:first-of-type {
     margin-bottom: 0px !important;
